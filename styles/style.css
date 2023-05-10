@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: #e96acd;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background: black;
+    border: 1px solid white;
+    color: #750909;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+/******************* PSEUDOCLASES *******************/
+.menu__item:nth-child(2) a {
+    background: black;
+    border: 1px solid white;
+    color: #750909;
+}
+
+.menu__item:first-child a {
+    background: black;
+}
+
+.menu__item:last-child a {
+    background: black;
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: white;
+}
+
+.menu__item a:hover {
+    background: #887f86;
+    color: white;
+}
+
+
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/autos-americanos-muscle.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+
+/********** Pseudoelementos ***********/
+.imagenPrincipal h2 {
+    color: white;
+}
+
+.imagenPrincipal h2::selection {
+    background: #454545;
+    color: rgb(129, 10, 10);
+}
+
+.imagenPrincipal p {
+    color: white;
+}
+
+.imagenPrincipal p::first-line {
+    color: #696a69;
+}
+
+.imagenPrincipal p::selection {
+    background: rgb(160, 50, 50);
+    color: #c02929;
+}
+
+
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: black;
+    color: red;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados {
+    flex: 1;
+}
+
+.tarjetita__boton{
+    background-color: rgb(0, 0, 0);
+    padding: 5px ;
+   border-top-style:ridge;
+   border-color: rgb(62, 39, 9);
+}
